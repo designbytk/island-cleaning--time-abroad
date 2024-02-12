@@ -4,17 +4,18 @@
   "description": "Website build for Island Cleaning Service of Nantucket",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/scss/main.scss:dist/css/main.css --no-charset --no-source-map --style compressed",
+    "dev:eleventy": "npx eleventy",
+    "dev:sass": "sass src/scss/main.scss:dist/css/main.css --no-charset --no-source-map --style compressed",
     "pug": "npx pug src/pug/index.pug --out dist -P",
     "static": "mkdir -p dist/img && cp -r src/img/* dist/img && cp -r src/static/* dist",
     "js": "esbuild src/js/main.js --bundle --outdir=dist/js",
-    "dev": "npm run pug && npm run sass && npm run static && npm run js"
+    "dev": "npm run dev:eleventy && npm run dev:sass"
   },
   "keywords": [
     "website"
   ],
   "author": "t.k.langston | designbytk.com | lnghll.com",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "esbuild": "^0.19.2",
