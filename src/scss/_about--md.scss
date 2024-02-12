@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+    #about {
+        &.section {
+            background-color: #E6ECED;
+            // min-height: 50vh;
+            scroll-snap-align: start;
+            display: flow-root;
+
+        }
+
+        .container {
+            padding: 7.2rem 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+
+            .about-story {
+                margin-bottom: 4rem;
+                width: 100%;
+                padding: 0 3rem;
+            }
+
+            .photo-vintage {
+                align-self: start;
+            }
+
+            img:nth-of-type(2) {
+                display: block;
+                position: relative;
+                margin-left: -2rem;
+                top: 70px;
+                // margin-bottom: -80px;
+                transform: rotate(3deg);
+                width: 320px;
+            }
+
+        }
+    }
+
+
+    .sextant-clipped {
+        top: -120px;
+        left: 25vw;
+    }
+
+}

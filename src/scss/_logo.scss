@@ -1,0 +1,50 @@
+// Styling for the SVG of the Compass Logo
+polygon {
+    fill: #104572;
+}
+
+.outer-ring {
+    fill: #0094D9;
+}
+
+.inner-ring {
+    display: none;
+}
+
+.inner-ring {
+    fill: rgb(0,149,217);
+    // fill: linear-gradient(135deg, rgba(0,149,217,1) 0%, rgba(0,97,144,1) 100%);
+}
+
+.island {
+    display: none;
+}
+
+@media (min-width: 1024px){
+
+    .island {
+        display: inherit;
+    }
+
+    .inner-ring-sm {
+        display: none;
+    }
+
+    .inner-ring {
+        display: inherit;
+    }
+
+    .nav-scrolled {
+        .island {
+            display: none;
+            }
+
+        .inner-ring-sm {
+            display: inherit;
+        }
+
+        .inner-ring {
+            display: none;
+        }
+    }
+}

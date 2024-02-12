@@ -1,0 +1,84 @@
+// Navbar layout > css grid with flexbox fallback
+.site-header {
+    // display: grid;
+    // grid-template-columns: 1fr 3fr;
+    // align-items: center;
+    // height: 150px;
+    width: 100%;
+    display: flex;
+    // overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    transition: padding 250ms ease-in;
+    z-index: 998;
+    align-items: center;
+
+    header {
+        margin-right: 0;
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+    }
+
+    svg {
+        padding: 8px;
+        width: 60px;
+        height: 60px;
+        // reset default setting from solid style.css
+        box-sizing: initial;
+    }
+
+    // Logo Text
+    span { 
+        display: none;
+    }
+
+    nav {
+        // width: calc(100vw - 76px);
+        flex: 1;
+    }
+} 
+
+// .site-header nav {
+//     justify-self: end;
+// }
+
+
+.site-nav {
+    list-style: none;
+    // display: grid;
+    // grid-template-columns: repeat(3,1fr);
+    display: flex;
+    text-align: center;
+    // align-items: stretch;
+    // justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+.nav-item {
+
+    flex: 1 1 auto;   
+
+    a {
+        // padding-right: calc( (100vw - 76px) / 6);
+        // padding-left: calc( (100vw - 76px) / 6);
+        // background-color: greenyellow;
+        display: block;
+        padding: 1.7rem 0;
+        text-decoration: none;
+    }
+}
+
+
+// Tablet media queries
+@import 'navbar--md';
+
+// Laptop media queries
+@import 'navbar--lg';

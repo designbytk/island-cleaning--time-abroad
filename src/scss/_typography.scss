@@ -1,0 +1,135 @@
+// @import url("https://use.typekit.net/vvf8upy.css");
+
+body {
+    color: #8A94A7;
+    font-size: 1rem;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: ibm-plex-sans, sans-serif;
+    overflow-wrap: normal;
+}
+
+a {
+    color: #8A94A7;
+    // text-decoration: underline;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+    text-decoration: none;
+}
+
+.nav-item a,
+.story-header {
+    font-family: ibm-plex-sans-condensed, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    // text-align: left;
+    color: #adaeaf;
+}
+
+.story-tagline {
+    font-family: ibm-plex-serif, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.8rem;
+    text-align: left;
+    color: #1a93dc;
+}
+
+// Hero section
+.hero-header {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.4rem;
+    color: #043f6d;
+    line-height: 108%;
+
+    :nth-child(1) {
+        font-size: 3rem;
+        line-height: 2.4rem;
+    }
+
+    :nth-child(2),
+    ins {
+        font-style: italic;
+    }
+
+    ins {
+        line-height: 66%;
+        text-decoration: none;
+    }
+
+    // Tablet
+    @media (min-width: 768px) {
+        font-size: 7.6rem;
+
+    }
+
+}
+
+.hero-subhead {
+    font-family: ibm-plex-serif, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+    color: #CCCACA;
+
+    span {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+
+        span {
+            display: inline;
+        }
+    }
+}
+
+.lead,
+.site-header span {
+    font-family: open-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    color: #1a93dc;
+    text-transform: uppercase;
+}
+
+// About section
+.story-lead {
+    font-size: 1.3rem;
+    // text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+        font-size: inherit;
+    }
+}
+
+.copyright {
+    font-size: .7rem;
+}
+
+.service {
+    font-size: 1.4rem;
+}
+
+.service-desc {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.long-desc {
+    color: rgba(255, 255, 255, 0.7);
+}

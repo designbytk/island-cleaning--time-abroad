@@ -1,0 +1,168 @@
+/*! CSS Used from: https://preview.cruip.com/storm/css/style.css */
+
+.container-form {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 481px) {
+    .container-form {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.container-form {
+    max-width: 668px;
+}
+
+.form-label {
+    color: #808AB8;
+    font-weight: 500;
+}
+
+.form-label {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.form-control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    // border-width: 1px;
+    // border-style: solid;
+    // border-color: #252B45;
+    border: 0;
+    width: 100%
+    // border-radius: 6px;
+}
+
+.form-control:active,
+.form-control:focus {
+    outline: none;
+    background-color: rgb(38, 42, 51, .5);
+}
+
+
+
+
+  
+// input:valid:required {
+//     border: 0;
+// }
+
+// input:invalid {
+//     border: 1px solid #00C2BE;
+// }
+
+// Potential Honeypot
+.form-control-email {
+    display: none;
+}
+
+.form-control {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 11px 15px;
+    height: 48px;
+    border-radius: 6px;
+    color: rgb(230, 236, 237,.8);
+    box-shadow: none;
+    max-width: 100%;
+    // width: 100%;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgb(230, 236, 237,.3);
+}
+
+.form-control::-moz-placeholder {
+    color: rgb(230, 236, 237,.3);
+}
+
+.form-control:-ms-input-placeholder {
+    color: rgb(230, 236, 237,.3);
+}
+
+.form-control::-ms-input-placeholder {
+    color:rgb(230, 236, 237,.3);
+}
+
+.form-control::placeholder {
+    color: rgb(230, 236, 237,.3);
+}
+
+.form-control::-ms-input-placeholder {
+    color: rgb(230, 236, 237,.3);
+}
+
+.quote-text {
+    margin: 1rem 0;
+
+    span {
+
+        width: 100%;
+        display: block;
+        font-size: 1.6rem;
+        line-height: auto;
+
+    }
+}
+
+@media (min-width: 768px) {
+
+    .quote-text {
+        span {
+            line-height: 4rem;
+        }
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    .form-input .form-control {
+        margin-bottom: 12px;
+    }
+
+}
+
+@media (min-width: 641px) {
+    .form-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input .form-control {
+        flex-grow: 1;
+        flex-shrink: 1;
+        // margin-right: 12px;
+    }
+
+}
+
+
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.help-block.with-errors {
+    // width: 100%;
+    color: #61c1fd;
+}

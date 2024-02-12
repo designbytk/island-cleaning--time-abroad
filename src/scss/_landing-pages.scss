@@ -1,0 +1,160 @@
+// Navbar layout > css grid with flexbox fallback
+.page-header {
+
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    align-items: center;
+
+    header {
+        margin-right: 0;
+
+        p {
+            display: flex;
+            align-items: center;
+            font-family: open-sans, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 21px;
+            color: #1a93dc;
+            text-transform: uppercase;
+
+        }
+    }
+
+    svg {
+        padding: 8px;
+        width: 60px;
+        height: 60px;
+        // reset default setting from solid style.css
+        box-sizing: initial;
+    }
+
+    // Logo Text
+    // span { 
+    //     display: none;
+    // }
+
+    nav {
+        // width: calc(100vw - 76px);
+        flex: 1;
+    }
+}
+
+.page {
+    .hero {
+        min-height: auto;
+
+        .container-form {
+            background-color: #020202;
+            border-radius: 1rem;
+            // max-width: 400px;
+            align-self: flex-start;
+        }
+
+        .hero-subhead {
+            width: auto;
+        }
+    }
+}
+
+
+.details {
+    
+        background-color: rgb(134, 159, 163);
+        // min-height: 100vh;
+        scroll-snap-align: start;
+        display: flow-root;
+
+        .container {
+            display: flex;
+            padding: 0;
+            // min-height: 357px;
+            align-items: center;
+
+            img {
+                // position: absolute;
+                // right: 0px;
+                margin-left: 1rem;
+               
+                // margin-left: calc(100vw - )
+            }
+        }
+
+    
+}
+
+@media (min-width: 768px) {
+    .page-header {
+
+        header {
+            margin-right: auto;
+            flex: 1 1 auto;
+        }
+
+        // span {
+        //     display: inline;
+        // }
+
+
+    }
+    .page {
+        .hero {
+            height: auto;
+        }
+    }
+
+
+
+
+
+}
+
+// Breakpoint for Laptop and larger
+@media (min-width: 1024px) {
+    .page-header {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0);
+
+        header {
+            margin-right: auto;
+            flex: 1 1 auto;
+        }
+
+
+        svg {
+            width: 120px;
+            height: 120px;
+            padding: 1rem;
+        }
+
+
+    }
+
+    .page {
+        .hero {
+            margin: 2rem 0 4rem 0;
+
+            .container {
+                flex-direction: row;
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .page-header {
+
+        justify-content: center;
+        // transition: height 250ms ease-in, width 250ms ease-in,;
+
+
+    }
+
+}

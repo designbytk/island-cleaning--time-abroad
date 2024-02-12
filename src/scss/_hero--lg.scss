@@ -1,0 +1,88 @@
+/* HERO SECTION */
+// Breakpoint for Desktop -- upright
+@media (min-width: 1024px) {
+
+    .hero {
+
+        height: 100vh;
+        padding-top: 0;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        margin-top: -4rem;
+
+        .container {
+            text-align: left;
+            padding: 0;
+        }
+
+        .lead {
+            display: none;
+        }
+
+        .hero-header {
+            font-style: italic;
+            font-size: 4.7rem;
+
+            :nth-child(1) {
+                font-size: inherit;
+            }
+
+            span,
+            ins {
+                display: inline-block;
+            }
+
+            ins {
+                margin-left: -.7rem;
+            }
+
+        }
+
+        .hero-images {
+            display: block;
+
+            img {
+                opacity: .3;
+                position: absolute;
+                right: 10%;
+                top: 300px;
+            }
+
+            svg {
+                color: #1a93dc;
+                opacity: .3;
+                position: absolute;
+                right: 30%;
+                top: 70%;
+                width: 260px;
+            }
+        }
+
+
+
+    }
+
+    .hero-subhead {
+        padding: 0;
+        width: 50%;
+        margin-bottom: 0 !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        .hero-header {
+            font-size: 5.2rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        .hero-header {
+            font-size: 6.4rem;
+        }
+    }
+}

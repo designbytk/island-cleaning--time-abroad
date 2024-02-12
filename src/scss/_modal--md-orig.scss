@@ -1,0 +1,112 @@
+@media (min-width: 768px) {
+
+    .container {
+
+        .modal {
+            position: relative;
+            background: rgb(96, 94, 92);
+            background: linear-gradient(15deg, rgba(63, 68, 71, 1) 0%, rgba(96, 94, 92, 1) 100%);
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(.8);
+            // transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+            padding-top: 81px;
+            overflow: visible;
+            z-index: 799;
+            // transition: display 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            // background: #EFFBFD;
+            padding: 0;
+            order: -1;
+            height: 0px;
+            // position: relative;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+
+        }
+
+        .modal-content {
+
+            width: 100%;
+            display: flex;
+
+
+            img {
+                opacity: .8;
+                // width: 40%;
+                // height: 40%;
+                border-top-left-radius: 1rem;
+            }
+
+            .card-content {
+                padding-top: 3rem;
+            }
+
+
+        }
+
+        .show-modal {
+            opacity: 1;
+            visibility: visible;
+            // display: block;
+            transform: scale(1.0);
+            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+            height: 400px;
+
+        
+        }
+
+        &.container-modal {
+
+
+            .card {
+                display: none;
+            }
+
+            .h3 {
+                order: -2;
+            }
+
+            // // Card List still visible
+            // .card {
+            //     max-width: 24%;
+            //     height: 100px;
+            //     background: lightgray;
+            //     text-align: center;
+            //     img, .service-desc {
+            //         display: none;
+            //     }
+            // }
+        }
+
+        .modal-footer {
+            // padding: 3rem 0;
+            margin: 0;
+            text-align: left;
+            padding: 3rem 0;
+            // background: rgb(63, 68, 71);
+            // border-radius: 0 0 1rem 1rem;
+
+
+        }
+
+        .modal-image {
+            width: 213px;
+            flex: 0 0 100%;
+        }
+
+        .modal-header {
+            display: none;
+        }
+
+        // Apple Style Close Button
+        .close-btn {
+            // font-size: 28px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+    }
+}

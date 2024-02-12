@@ -1,0 +1,42 @@
+// based on https://stephanwagner.me/only-css-loading-spinner
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.form-submit {
+    position: relative;
+}
+
+.loading::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border-top: 2px solid #07d;
+    border-right: 2px solid transparent;
+    animation: spinner .6s linear infinite;
+    z-index: 1038;
+}
+
+
+// .loading::after {
+//     content: ""; // ::before and ::after both require content
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #ffffff;
+//     opacity: .7;
+//     z-index: 1033;
+// }

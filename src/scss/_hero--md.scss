@@ -1,0 +1,21 @@
+/* HERO SECTION */
+// Breakpoint for Tablet -- upright
+@media (min-width: 768px) {
+
+    .hero {
+
+        height: 100vh;
+        padding-top: 3rem;
+
+        .lead {
+            display: none;
+        }
+
+        
+    }
+
+    .hero-subhead {
+        padding: 0 1rem;
+    }
+
+}

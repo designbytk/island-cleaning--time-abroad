@@ -1,0 +1,23 @@
+// Scroll Snapping if available for mobile Sections
+main {
+    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y proximity;
+}
+
+ol[class], ul[class] {
+    list-style:none
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+// .section .container {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// Utilities
+.hide {
+    display: none !important;
+}

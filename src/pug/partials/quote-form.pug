@@ -1,0 +1,38 @@
+.container-form.hide
+  form.quote-form#request-form
+    p.quote-text Please provide the following information and we'll be glad to contact you with a quote
+    .form-group
+      label.form-label.is-hidden(for="input-01") First Name
+      .form-input
+        input.form-control#input-01(type="text", placeholder="First Name", name="first", required)
+        .help-block.with-errors
+    .form-group
+      label.form-label.is-hidden(for="input-02") Last Name
+      .form-input
+        input.form-control(type="text", placeholder="Last Name", name="last", required)
+        .help-block.with-errors
+    .form-group
+      label.form-label.is-hidden(for="input-03") Email
+      .form-input
+        input.form-control(type="email", placeholder="Email Address", name="emailics", required)
+        .help-block.with-errors
+        input.form-control-email(type="text", name="email", placeholder="Your email address")
+    .form-group
+      label.form-label.is-hidden(for="input-04") Phone
+      .form-input
+        input.form-control(type="phone", placeholder="Phone Number", name="phone", required)
+        .help-block.with-errors
+    .form-group
+      label.form-label.is-hidden(for="input-05") Residence
+      select.form-control.custom-select(name="residence", required)
+        option(value) I'm a ...
+        option(value="resident") I'm a Resident 🏠
+        option(value="owner") I'm a Property Owner 🔑
+        option(value="renter") I'm a Renter 🛏️
+        option(value="manager") I'm a Property Manager 🗝️
+      .help-block.with-errors
+    input(type="hidden", value="generic", name="service")
+    .form-group.form-submit
+      input.button.button-primary.mr-1(type="submit", value="Submit")
+      input.button.button-light(type="reset", value="Reset")
+      button.button.button-light.go-back Back

@@ -1,0 +1,31 @@
+doctype
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Island Cleaning Service of Nantucket | Serving the Island since 1972
+    include partials/meta.pug
+    link(rel="stylesheet", href="https://use.typekit.net/vvf8upy.css")
+    link(rel="stylesheet", href="css/main.css")
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-76447546-5")
+    script.  
+        window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+      
+              gtag('config', 'UA-76447546-5');
+  body
+    //- include sections/covid.pug
+    //- SITE Header and Navigation 
+    include partials/navbar.pug
+    main
+      //-  HERO Section 
+      include sections/hero.pug
+      //-  ABOUT Section 
+      include sections/about.pug
+      //-  SERVICES Section 
+      include sections/services.pug
+    include partials/quote-form.pug
+    include sections/footer.pug
+    script(src="js/main.js")

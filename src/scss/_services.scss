@@ -1,0 +1,115 @@
+.section.services {
+    background-color: #EFFBFD; // B3D0D5 EFFBFD D9E7EA
+    display: flex;
+
+    .container {
+        padding: 100px 2rem;
+
+        .h3 {
+            font-weight: 400;
+            font-style: italic;
+            font-size: 36px;
+            line-height: 38px;
+            text-align: center;
+            color: #043f6d;
+            margin-bottom: 1rem;
+        }
+
+
+
+    }
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background: rgb(96, 94, 92);
+    background: linear-gradient(15deg, rgba(63, 68, 71, 1) 0%, rgba(96, 94, 92, 1) 100%);
+    color: white;
+    border-radius: .5rem;
+    margin-bottom: 1.4rem;
+    overflow: hidden;
+
+    .long-desc,
+    .service-list,
+    .service-cert {
+        display: none;
+    }
+
+
+
+
+
+    &[data-service="window-cleaning"],
+    &[data-service="carpet-cleaning"],
+    &[data-service="disinfectants"] {
+
+        .card-content {
+            padding: 8px 1rem 2rem 1rem;
+        }
+
+        img {
+            border-radius: .5rem .5rem 0 0;
+        }
+    }
+
+    &[data-service="power-washing"],
+    &[data-service="trim-washing"],
+    &[data-service="dryer-vent-cleaning"],
+    &[data-service="gutter-cleaning"],
+    &[data-service="roof-cleaning"],
+    &[data-service="teak-cleaning"] {
+        display: flex;
+        align-items: center;
+    
+        img {
+            height: 100px;
+            border-radius: .5rem 0 0 .5rem;
+            margin-left: -33px;
+        }
+    
+        .card-content {
+            padding: 0 1rem 0 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    }
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+
+}
+
+
+.service-list,
+.service-cert {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.card-badge {
+    background-color: #1a93dc;
+    border-radius: 1rem;
+    // height: 1rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-family: ibm-plex-sans-condensed, sans-serif;
+    font-weight: 600;
+    line-height: 1.1rem;
+    font-style: normal;
+    padding-right: .7rem;
+    padding-left: .7rem;
+    color: #ffffff;
+    width: fit-content;
+}
+
+
+// Tablet
+@import 'services--md';
+
+
+// Tablet
+@import 'services--lg';

@@ -1,0 +1,106 @@
+
+/* Box sizing rules */
+/* Remove default margin */
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* Set core root defaults */
+/* Set core body defaults */
+/* A elements that don't have a class get default styles */
+/* Make images easier to work with */
+/* Inherit fonts for inputs and buttons */
+/* Remove all animations and transitions for people that prefer not to see them */
+* {
+	box-sizing: border-box;
+	&::before {
+		box-sizing: border-box;
+	}
+	&::after {
+		box-sizing: border-box;
+	}
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+h1 {
+	margin: 0;
+}
+h2 {
+	margin: 0;
+}
+h3 {
+	margin: 0;
+}
+h4 {
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+figure {
+	margin: 0;
+}
+blockquote {
+	margin: 0;
+}
+dl {
+	margin: 0;
+}
+dd {
+	margin: 0;
+}
+ul[role="list"] {
+	list-style: none;
+}
+ol[role="list"] {
+	list-style: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+a {
+	&:not([class]) {
+		text-decoration-skip-ink: auto;
+	}
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+picture {
+	max-width: 100%;
+	display: block;
+}
+input {
+	font: inherit;
+}
+button {
+	font: inherit;
+}
+textarea {
+	font: inherit;
+}
+select {
+	font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+		&::before {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+			scroll-behavior: auto !important;
+		}
+		&::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+			scroll-behavior: auto !important;
+		}
+	}
+}

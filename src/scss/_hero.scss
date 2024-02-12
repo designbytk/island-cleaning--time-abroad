@@ -1,0 +1,53 @@
+/* HERO SECTION */
+
+// Swap Text content list of Services
+.insert-list {
+    display: none;
+}
+
+.hero {
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFFBFD;
+    text-align: center;
+    padding-top: 2rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-items: stretch;
+
+    }
+
+    .container h1, .container h2 {
+        margin-bottom: 3rem;
+    }
+    .container p {
+        margin-bottom: 1.8rem;
+    }
+
+    .hero-header span, .hero-header ins {
+        display: block;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-header ins {
+        padding: 0px 1rem 1.4rem .8rem;
+        border-bottom: 2px solid #BCE1FF;
+        background-color: #FFFFFF;
+        margin-top: .9rem;
+    }
+
+    .hero-images {
+        display: none;
+    }
+}
+
+// Tablet media queries
+@import 'hero--md';
+
+// Desktop media queries
+@import 'hero--lg';

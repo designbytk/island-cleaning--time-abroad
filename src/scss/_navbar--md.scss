@@ -1,0 +1,30 @@
+// Breakpoint for Tablet -- upright
+@media (min-width: 768px) {
+    .site-header {
+
+        header {
+            margin-right: auto;
+            flex: 1 1 auto;
+        }
+
+        span {
+            display: inline;
+        }
+
+        nav {
+            padding-right: 1.2rem;
+        }
+    }
+
+
+    .nav-item {
+
+        flex: 0;
+
+        a {
+            padding: 1.6rem 1.2rem 1.6rem;
+            text-decoration: none;
+        }
+    }
+
+}

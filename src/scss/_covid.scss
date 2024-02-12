@@ -1,0 +1,112 @@
+.covid-info {
+    padding: 1rem 1rem;
+    background-color: rgb(6, 49, 82);
+    font-size: 80%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 899;
+
+    p {
+        display: none;
+    }
+
+    .lead {
+        text-transform: none;
+        font-size: .9rem;
+        width: 87%;
+        display: block;
+        // margin-right: 10%;
+    }
+
+    // .lead:before {
+    //     content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='currentColor' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z'/></svg>");
+    //     width: 1.8rem;
+    //     margin-right: .6rem;
+    // }
+    
+    
+    
+}
+
+// Apple Style Close Button
+.covid-close {
+    font-size: 28px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 36px;
+    width: 36px;
+    line-height: 28px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: rgba(6, 49, 82, 0.6);
+    text-align: center;
+    cursor: pointer;
+    z-index: 7999;
+    // opacity: 0;
+    // visibility: hidden;
+    // transition: all 0.15s ease-in-out;
+}
+
+.covid-button {
+    display: inline-flex;
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 14px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    background-color: rgba(9, 126, 236,0.2);
+    color: rgba(255, 255, 255,.6) !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    padding: 10px 16px;
+    height: 36px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 1rem;
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.65em;
+	left: 0;
+	position: relative;
+    top: 0.3em;
+    margin-right: .5rem;
+	transform: rotate(45deg);
+	vertical-align: top;
+	width: 0.65em;
+}
+
+.show {
+    display: block !important;
+}
+
+@media (min-width: 1024px) {
+
+    .covid-info {
+        padding: 1rem 4rem;
+
+        p {
+            display: block;
+        }
+
+        .lead {
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+    
+    }
+
+    .covid-button {
+        display: none;
+    }
+
+}
+

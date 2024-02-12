@@ -1,0 +1,93 @@
+// Breakpoint for Laptop and larger
+@media (min-width: 1024px) {
+    .site-header {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0);
+
+            header {
+                margin-right: auto;
+                flex: 2 1 auto;
+            }
+        &.nav-scrolled {
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+                svg {
+                    width: 80px;
+                    height: 80px;
+                    padding: 8px;
+                }
+
+
+        }
+
+        svg {
+            width: 120px;
+            height: 120px;
+            padding: 1rem;
+        }
+
+        
+        //     span {
+        //         display: inline;
+        //     }
+
+        //     nav {
+        //         padding-right: 1.2rem;
+        //     }
+        // }
+
+
+        // .nav-item {
+
+        //     flex: 0;
+
+        //     a {
+        //         padding: 1.6rem 1.2rem 1.2rem;
+        //         text-decoration: none;
+        //     }
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .site-header {
+
+        justify-content: center;
+        // transition: height 250ms ease-in, width 250ms ease-in,;
+
+
+        nav {
+            padding-right: 0;
+        }
+
+    
+    }
+
+}
+
+
+// .site-header {
+//     @media (min-width: 992px) {
+//         padding-left: calc( (100vw - 960px) / 2);
+
+//     }
+
+//     @media (min-width: 1024px) {
+//         padding-left: calc( (100vw - 960px) / 2);
+//         padding-right: calc( (100vw - 960px) / 2);
+//     }
+
+//     @media (min-width: 1200px) {
+//         max-width: 1140px;
+//     }
+
+//     @media (min-width: 1440px) {
+//         max-width: 1352px !important;
+//     }
+// }
+
+
+
